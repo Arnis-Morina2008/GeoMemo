@@ -17,7 +17,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.illyriankingdomsteam.GeoMemo"
     },
     "web": {
       "output": "static",
@@ -34,11 +35,30 @@
             "imageWidth": 76
           }
         }
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-status-bar",
+      "expo-web-browser",
+      "expo-sharing",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow GeoMemo to access your photos.",
+          "savePhotosPermission": "Allow GeoMemo to save photos to your library."
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "660d6959-d909-4dcb-a547-a52fa7ac34a7"
+      }
+    },
+    "owner": "illyriankingdoms-team"
   }
 }
